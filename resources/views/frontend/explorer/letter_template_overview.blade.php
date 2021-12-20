@@ -1,0 +1,224 @@
+@extends('frontend.layouts.app_landing')
+
+@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
+
+@section('content')
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Demo styles -->
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <div class="main">
+        <!--hero section start-->
+        <div class="main" style="background-color: #f4f4f4;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-2" style="background: white;">
+                        <div class="sidebar-left pr-4" style="padding-top: 30px;">
+                            <div class="">
+                                <aside class="widget widget-categories">
+                                    <ul>
+                                        <li><a href="#">Greeting Letters</a></li>
+                                        <li><a href="#">Romantic</a></li>
+                                        <li><a href="#">New Year Wishes</a></li>
+                                        <li><a href="#">Halloween Cards</a></li>
+                                        <li><a href="#">Invitation Letters</a></li>
+                                        <li><a href="#">Professional Letters</a></li>
+                                        <li><a href="#">Wedding Wish</a></li>
+                                        <li><a href="#">New Born Wish</a></li>
+                                        <li><a href="#">Visak Card</a></li>
+                                        <li><a href="#">Deepawali Cards</a></li>
+                                        <li><a href="#">Awurudu Calenders</a></li>
+                                        <li><a href="#">Poem Panel</a></li>
+                                    </ul>
+                                </aside>
+
+                                <!-- Recent entries widget-->
+
+                                <!-- Subscribe widget-->
+                                <aside class="widget widget-categories">
+                                    <div class="widget-title">
+                                        <h6>Liyamana Devlopers</h6>
+                                    </div>
+                                    <p>Enter your email address below to subscribe to my newsletter</p>
+                                    <button class="btn primary-solid-btn btn-block btn-not-rounded mt-3"  data-toggle="modal" data-target=".bd-example-modal-lg">Sent Email</button>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="card">
+                            <div class="card-body">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                    </ol>
+                                </nav>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="swiper mySwiper" style="height: 400px;margin-top: 20px;">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide" style="background-image: url('{{url('dummy_data/pav1.jpg')}}');background-size: cover;background-repeat: no-repeat;background-position: center; ">
+                                                    <div style=""></div>
+                                                </div>
+                                                <div class="swiper-slide" style="background-image: url('{{url('dummy_data/pav2.jpg')}}');background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div style="padding-top: 20px;">
+                                            <h3>Hello World</h3>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                     <h5>1.00 USD</h5>
+                                                    <p> Template Price : USD 10.00</p>
+                                                    <span>
+                                                        <div style="background-color: #efefef;padding: 10px;border-radius: 10px;">
+                                                            Helloween Categories
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p style="font-size: 12px;">
+                                                It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout. The point of using
+                                                Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                                                as opposed to using 'Content here, content here', making it look like readable English.
+                                                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                                            </p>
+                                            <div>
+                                                <p>Template By <span><a href="">Sanjaya Senevirathne</a> </span></p>
+                                            </div>
+                                            <a href="" class="btn btn-primary" style="background-color: #700a02;border-color: #700a02">Add Wishlist</a>
+                                            <a href="" class="btn btn-primary" style="background-color: #700a02;border-color: #700a02">Get Start</a>
+                                            <a href="" class="btn btn-primary" style="background-color: #700a02;border-color: #700a02">Purchase this Template</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <br>
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-bottom: 10px;">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 style="text-align: center;padding-bottom: 5px">Birth Day Wishluck</h5>
+                                            <div style="background-image: url('{{url('dummy_data/dummy.jpg')}}');height: 195px;background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+                                            <br>
+                                            <p style="font-size: 12px;overflow: hidden;text-overflow: ellipsis;height: 62px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend, lorem vitae suscipit semper, nisl nisl aliquam lacus, ut suscipit dui ipsum vel libero. Nulla mattis magna massa, sit amet mollis mi dignissim a. Vestibulum vehicula gravida aliquet. Sed placerat, lacus consectetur egestas</p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h4>$1.00</h4>
+                                                </div>
+                                                <div class="col-md-6" style="text-align: right;">
+                                                    <a href="{{route('frontend.explorer.show_template','birth_day_wish')}}" class="btn btn-primary" style="font-size: 12px;">Get Start</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" style="margin-bottom: 10px;">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 style="text-align: center;padding-bottom: 5px">Birth Day Wishluck</h5>
+                                            <div style="background-image: url('{{url('dummy_data/p2.jpg')}}');height: 195px;background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+                                            <br>
+                                            <p style="font-size: 12px;overflow: hidden;text-overflow: ellipsis;height: 62px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend, lorem vitae suscipit semper, nisl nisl aliquam lacus, ut suscipit dui ipsum vel libero. Nulla mattis magna massa, sit amet mollis mi dignissim a. Vestibulum vehicula gravida aliquet. Sed placerat, lacus consectetur egestas</p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h4>$1.00</h4>
+                                                </div>
+                                                <div class="col-md-6" style="text-align: right;">
+                                                    <a href="" class="btn btn-primary" style="font-size: 12px;">Inquiry</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" style="margin-bottom: 10px;">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 style="text-align: center;padding-bottom: 5px">Birth Day Wishluck</h5>
+                                            <div style="background-image: url('{{url('dummy_data/p3.jpg')}}');height: 195px;background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+                                            <br>
+                                            <p style="font-size: 12px;overflow: hidden;text-overflow: ellipsis;height: 62px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend, lorem vitae suscipit semper, nisl nisl aliquam lacus, ut suscipit dui ipsum vel libero. Nulla mattis magna massa, sit amet mollis mi dignissim a. Vestibulum vehicula gravida aliquet. Sed placerat, lacus consectetur egestas</p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h4>$1.00</h4>
+                                                </div>
+                                                <div class="col-md-6" style="text-align: right;">
+                                                    <a href="" class="btn btn-primary" style="font-size: 12px;">Inquiry</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+@endsection

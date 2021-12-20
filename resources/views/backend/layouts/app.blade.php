@@ -15,6 +15,9 @@
     <meta name="author" content="@yield('meta_author', 'Anthony Rappa')">
     @yield('meta')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
+    <link rel="stylesheet" href="{{url('dist/css/bootstrap-iconpicker.min.css')}}"/>
+    <link rel="stylesheet" href="http://propertymarketlive.com/css/aiz-core.css"/>
 
     {{-- See https://laravel.com/docs/5.5/blade#stacks for usage --}}
     @stack('before-styles')
@@ -119,6 +122,7 @@
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.6/js/responsive.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="{{url('dist/js/bootstrap-iconpicker.bundle.min.js')}}"></script>
 
     <script src="{{url('js/vendors.js')}}"></script>
     <script src="{{url('js/aiz-core.js')}}"></script>
