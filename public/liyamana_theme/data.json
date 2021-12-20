@@ -1,0 +1,110 @@
+[
+  {
+    "vpsPlan": 1,
+    "vpsCore": 1,
+    "vpsMemory": 2,
+    "vpsStorage": 10,
+    "vpsBandwidth": 1000,
+    "vpsPrice": 20,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=12"
+  },
+  {
+    "vpsPlan": 2,
+    "vpsCore": 2,
+    "vpsMemory": 4,
+    "vpsStorage": 20,
+    "vpsBandwidth": 2000,
+    "vpsPrice": 40,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=13"
+  },
+  {
+    "vpsPlan": 3,
+    "vpsCore": 3,
+    "vpsMemory": 6,
+    "vpsStorage": 30,
+    "vpsBandwidth": 3000,
+    "vpsPrice": 60,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=14"
+  },
+  {
+    "vpsPlan": 4,
+    "vpsCore": 4,
+    "vpsMemory": 8,
+    "vpsStorage": 40,
+    "vpsBandwidth": 4000,
+    "vpsPrice": 80,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=13"
+  },
+  {
+    "vpsPlan": 5,
+    "vpsCore": 5,
+    "vpsMemory": 10,
+    "vpsStorage": 50,
+    "vpsBandwidth": 5000,
+    "vpsPrice": 100,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=12"
+  },
+  {
+    "vpsPlan": 6,
+    "vpsCore": 6,
+    "vpsMemory": 12,
+    "vpsStorage": 60,
+    "vpsBandwidth": 6000,
+    "vpsPrice": 120,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=13"
+  },
+  {
+    "vpsPlan": 7,
+    "vpsCore": 7,
+    "vpsMemory": 14,
+    "vpsStorage": 70,
+    "vpsBandwidth": 7000,
+    "vpsPrice": 140,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=14"
+  },
+  {
+    "vpsPlan": 8,
+    "vpsCore": 8,
+    "vpsMemory": 16,
+    "vpsStorage": 80,
+    "vpsBandwidth": 8000,
+    "vpsPrice": 160,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=12"
+  },
+  {
+    "vpsPlan": 9,
+    "vpsCore": 9,
+    "vpsMemory": 18,
+    "vpsStorage": 90,
+    "vpsBandwidth": 9000,
+    "vpsPrice": 180,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=13"
+  },
+  {
+    "vpsPlan": 10,
+    "vpsCore": 10,
+    "vpsMemory": 20,
+    "vpsStorage": 100,
+    "vpsBandwidth": 10000,
+    "vpsPrice": 200,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=14"
+  },
+  {
+    "vpsPlan": 11,
+    "vpsCore": 11,
+    "vpsMemory": 22,
+    "vpsStorage": 110,
+    "vpsBandwidth": 11000,
+    "vpsPrice": 220,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=12"
+  },
+  {
+    "vpsPlan": 12,
+    "vpsCore": 12,
+    "vpsMemory": 24,
+    "vpsStorage": 120,
+    "vpsBandwidth": 12000,
+    "vpsPrice": 240,
+    "vpsWHmcsUrl": "https://themetags.net/whmcs/cart.php?a=add&pid=13"
+  }
+]
