@@ -1,40 +1,34 @@
-@extends('frontend.layouts.app')
+@extends('frontend.layouts.app_landing')
 
-@section('title', app_name() . ' | ' . __('navs.general.home'))
+@section('title', app_name() . ' | ' . __('labels.frontend.contact.box_title'))
 
 @section('content')
-    <div class="row mb-4">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <i class="fas fa-home"></i> @lang('navs.general.home')
-                </div>
-                <div class="card-body">
-                    @lang('strings.frontend.welcome_to', ['place' => app_name()])
-                </div>
-            </div><!--card-->
-        </div><!--col-->
-    </div><!--row-->
 
-    <div class="row mb-4">
-        <div class="col">
-            <example-component></example-component>
-        </div><!--col-->
-    </div><!--row-->
+<div class="main">
+    <!--hero section start-->
+    @include('frontend.home_page_include.hero')
 
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <i class="fab fa-font-awesome-flag"></i> Font Awesome @lang('strings.frontend.test')
-                </div>
-                <div class="card-body">
-                    <i class="fas fa-home"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-pinterest"></i>
-                </div><!--card-body-->
-            </div><!--card-->
-        </div><!--col-->
-    </div><!--row-->
+    <!--promo-section section start-->
+    @include('frontend.home_page_include.description_section')
+    <!--promo-section section end-->
+
+    <!--feature section tab style start-->
+    @include('frontend.home_page_include.mail_types')
+    <!--feature section tab style end-->
+
+    @include('frontend.home_page_include.need_help_section')
+
+
+   @include('frontend.home_page_include.packages')
+
+    @include('frontend.home_page_include.review_section')
+
+
+
+
+
+
+</div>
+
+
 @endsection

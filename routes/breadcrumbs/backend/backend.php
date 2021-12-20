@@ -31,4 +31,11 @@ Breadcrumbs::for('admin.contactus_thanks', function ($trail) {
     $trail->push('Contact Us Thanks Email', route('admin.contactus_thanks'));
 });
 
+Breadcrumbs::for('admin.letter_template_categories.index', function ($trail) {
+    $trail->push('Template Categories', route('admin.letter_template_categories.index'));
+});
+
+Breadcrumbs::for('admin.letter_template_categories.create', function ($trail) {
+    $trail->push('Template Categories Create', route('admin.letter_template_categories.create'));
+});
 

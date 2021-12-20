@@ -5,7 +5,9 @@ use App\Http\Controllers\Frontend\AizUploadController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\User\AccountController;
 use App\Http\Controllers\Frontend\User\DashboardController;
+use App\Http\Controllers\Frontend\ExploreController;
 use App\Http\Controllers\Frontend\User\ProfileController;
+use App\Http\Controllers\Frontend\LetterController;
 
 /*
  * Frontend Controllers
@@ -14,6 +16,12 @@ use App\Http\Controllers\Frontend\User\ProfileController;
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
+Route::get('explorer/{category_slug}/{search_keyword}/{type}', [ExploreController::class, 'index'])->name('explorer.template');
+
+Route::get('letter-template/{slug}',[ExploreController::class, 'letter_template_overview'])->name('explorer.show_template');
+
+
+Route::get('write_new_letter', [LetterController::class, 'index'])->name('letter.wirte_letter');
 
 Route::post('/aiz-uploader', [AizUploadController::class, 'show_uploader']);
 Route::post('/aiz-uploader/upload', [AizUploadController::class, 'upload']);
