@@ -19,8 +19,16 @@ Route::get('file_manager/delete/{id}', [FileManagerController::class, 'destroy']
 Route::get('letter_template_categories', [LetterTemplatCategoryController::class, 'index'])->name('letter_template_categories.index');
 Route::get('letter_template_categories/create', [LetterTemplatCategoryController::class, 'create'])->name('letter_template_categories.create');
 Route::post('letter_template_categories/store', [LetterTemplatCategoryController::class, 'store'])->name('letter_template_categories.store');
+Route::post('letter_template_categories/update', [LetterTemplatCategoryController::class, 'update'])->name('letter_template_categories.update');
 Route::get('letter_template_categories/edit/{id}', [LetterTemplatCategoryController::class, 'edit'])->name('letter_template_categories.edit');
 Route::get('letter_template_categories/get_details', [LetterTemplatCategoryController::class, 'get_details'])->name('letter_template_categories.get_details');
+Route::get('letter_template_categories/delete/{id}', [LetterTemplatCategoryController::class, 'delete'])->name('letter_template_categories.delete');
+
+Route::get('letter_templates', [LetterTemplateController::class, 'index'])->name('letter_templates.index');
+Route::get('letter_templates/create', [LetterTemplateController::class, 'create'])->name('letter_templates.create');
+Route::get('letter_templates/edit/{id}', [LetterTemplateController::class, 'edit'])->name('letter_templates.edit');
+Route::get('letter_templates/delete/{id}', [LetterTemplateController::class, 'delete'])->name('letter_templates.delete');
+Route::get('letter_templates/get_details', [LetterTemplateController::class, 'get_details'])->name('letter_templates.get_details');
 
 
 Route::get('settings', [SettingsController::class, 'index'])->name('settings.index');

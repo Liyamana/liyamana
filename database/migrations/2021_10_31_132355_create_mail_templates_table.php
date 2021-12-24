@@ -20,9 +20,11 @@ class CreateMailTemplatesTable extends Migration
             $table->text('offer_price')->nullable()->comment('discounted_price');
             $table->text('price')->nullable();
             $table->text('feature_image')->nullable();
+            $table->text('images')->nullable();
             $table->text('is_purchased_status')->nullable()->comment('is enabled for bulk letters');
             $table->text('content_template')->nullable();
             $table->text('description')->nullable();
+            $table->text('category_id')->nullable();
             $table->text('user_id');
             $table->timestamps();
         });

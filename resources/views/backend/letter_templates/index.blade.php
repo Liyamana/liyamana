@@ -9,8 +9,8 @@
 
             <div class="card">
                 <div class="card-header">
-                    <strong>Template Categories</strong>
-                    <a href="{{route('admin.letter_template_categories.create')}}" class="btn btn-primary">Add Categories</a>
+                    <strong>Letters Templates</strong>
+                    <a href="{{route('admin.letter_templates.create')}}" class="btn btn-primary">Add Letter Templates</a>
 
                 </div><!--card-header-->
 
@@ -19,8 +19,9 @@
                         <thead>
                         <tr>
                             <th scope="col">#ID</th>
-                            <th scope="col">Icon</th>
-                            <th scope="col">Category Name</th>
+                            <th scope="col">Feature images</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Price</th>
                             <th scope="col">Status</th>
                             <th scope="col">Action</th>
                         </tr>
@@ -69,13 +70,14 @@
         $(function () {
             var table = $('#villadatatable').DataTable({
                 processing: true,
-                ajax: "{{route('admin.letter_template_categories.get_details')}}",
+                ajax: "{{route('admin.letter_templates.get_details')}}",
                 serverSide: true,
                 order: [[0, "desc"]],
                 columns: [
                     {data: 'id', name: 'id'},
-                    {data: 'icon', name: 'icon'},
-                    {data: 'category_name', name: 'category_name'},
+                    {data: 'feature_image', name: 'feature_image'},
+                    {data: 'title', name: 'title'},
+                    {data: 'price', name: 'price'},
                     {data: 'status', name: 'status'},
                     {data: 'action', name: 'action', orderable: false, searchable: false},
                 ]
@@ -91,7 +93,7 @@
 
             $('#ok_button').click(function(){
                 $.ajax({
-                    url:"letter_template_categories/delete/"+user_id,
+                    url:"letter_templates/delete/"+user_id,
                     success:function(data)
                     {
                         setTimeout(function(){

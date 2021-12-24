@@ -39,3 +39,14 @@ Breadcrumbs::for('admin.letter_template_categories.create', function ($trail) {
     $trail->push('Template Categories Create', route('admin.letter_template_categories.create'));
 });
 
+Breadcrumbs::for('admin.letter_template_categories.edit', function ($trail) {
+    $trail->push('Template Categories Edit', route('admin.letter_template_categories.edit',1));
+});
+
+Breadcrumbs::for('admin.letter_templates.index', function ($trail) {
+    $trail->push('Letters Templates', route('admin.letter_templates.index'));
+});
+
+Breadcrumbs::for('admin.letter_templates.create', function ($trail) {
+    $trail->push('Letters Templates Create', route('admin.letter_templates.create'));
+});
